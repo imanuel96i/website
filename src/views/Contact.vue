@@ -20,10 +20,7 @@
         </v-alert>
         <v-container v-if="reg==false">
           <v-alert type="error" v-if="regerr.email!=null || regerr.email!=''">
-            Este email ya se encuentra en uso
-          </v-alert>
-          <v-alert type="error" v-if="regerr.mobile!=null || regerr.mobile!=''">
-            Este numero ya se encuentra en uso
+            {{regerr.email}}
           </v-alert>
         </v-container>
         <v-form
@@ -99,7 +96,7 @@
           >
             Submit
           </v-btn>
-
+          
           <v-btn
             color="error"
             class="mr-4"
@@ -123,7 +120,6 @@
       reg: null,
       regerr: {
         email: null,
-        mobile: null
       },
       show1: false,
       show2: false,
@@ -159,9 +155,8 @@
       },
       postRegister (){
         this.regerr.email = ''
-        this.regerr.mobile = ''
         this.reg = null
-        axios.post('http://127.0.0.1:8000/UserMN/register',{
+        axios.post('http://127.0.0.1:8000/registro/',{
           first_name: this.named,
           last_name: this.lastname,
           email: this.email,
@@ -177,12 +172,6 @@
           this.reg = false
           if(err.response.data['email']!=null){
             this.regerr.email = 'Este email ya se encuentra en uso'
-            if(err.response.data['mobile']!=null && this.regerr!=null){
-              this.regerr.mobile = 'Este numero ya esta en uso'
-            }
-          }
-          if(err.response.data['mobile']!=null && this.regerr==null){
-            this.regerr.mobile = 'Este numero ya se encuentra en uso'
           }
         })
       },

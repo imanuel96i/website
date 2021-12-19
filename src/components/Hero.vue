@@ -41,10 +41,6 @@
             src: require('../assets/images/s3.png'),
             title: 'Suisei 3',
           },
-          {
-            src: require('../assets/images/s4.png'),
-            title: 'Suisei 4',
-          },
         ],
       }
     },

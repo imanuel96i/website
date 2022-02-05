@@ -165,7 +165,7 @@ import momenttz from 'moment-timezone'
         setTimeout(function(){component.addOneSecondToActualTimeEverySecond()}, 1000);
       },
       getDiffInSeconds () {
-        return momenttz("2022-01-12 09:00:00").tz('America/Los_Angeles').format('X') - this.actualTime
+        return momenttz("2022-03-11 00:00:00").tz('America/Santiago').format('X') - this.actualTime
       },
       compute () {
         var duration = moment.duration(this.getDiffInSeconds(), "seconds")

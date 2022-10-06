@@ -31,15 +31,15 @@
         items: [
           {
             src: require('../assets/images/s1.png'),
-            title: 'Suisei 1',
+            title: 'Test 1',
           },
           {
             src: require('../assets/images/s2.png'),
-            title: 'Suisei 2',
+            title: 'Test 2',
           },
           {
             src: require('../assets/images/s3.png'),
-            title: 'Suisei 3',
+            title: 'Test 3',
           },
         ],
       }

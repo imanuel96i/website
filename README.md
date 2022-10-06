@@ -1,5 +1,4 @@
 # website
-Url Example: https://mongetunweb.herokuapp.com (Actually in Downtime by exceed free dynamo)
 
 ## Project setup
 ```

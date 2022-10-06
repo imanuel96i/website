@@ -2,7 +2,6 @@
   <v-main>
     <Hero/>
     <Gallery/>
-    <CountdownTimer></CountdownTimer>
     <LatestPost/>
   </v-main>
 </template>
@@ -11,7 +10,6 @@
 import Hero from '../components/Hero';
 import Gallery from '../components/Gallery';
 import LatestPost from '../components/LatestPost';
-import CountdownTimer from '../components/Timer';
 
   export default {
     name: 'Home',
@@ -20,7 +18,6 @@ import CountdownTimer from '../components/Timer';
       Hero,
       Gallery,
       LatestPost,
-      CountdownTimer,
     },
 
     data () {

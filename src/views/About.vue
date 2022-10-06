@@ -2,7 +2,8 @@
   <v-main>
     <div class="staticHero">
       <v-img
-        src="../assets/images/img3.png"
+        src="../assets/images/img6.png"
+        
       >
         <v-row align="end" class="lightbox white--text pa-2 fill-height">
           <v-col>
@@ -16,7 +17,7 @@
     <div class="block">
       <v-container>
         <p>
-          AQUI IRA EL ACERCA DE NOSOTROS KASJKLSLADKJJKLASDKLJASLJKDKDLJSFLKASFJLASDJLAKSDJLASDKJDSALKDASJKL
+          ACERCA DE NOSOTROS
         </p>
       </v-container>
     </div>
@@ -58,7 +59,7 @@
         items: [
           {
             id: 1,
-            name: 'Yumeno',
+            name: 'Manuel',
             src: require('../assets/images/yume.gif'),
             title: 'Creator',
           },

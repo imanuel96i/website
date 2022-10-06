@@ -1,7 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="center">
     <v-footer
       padless
+      style="display: block;"
     >
       <v-card
         flat
@@ -10,6 +11,7 @@
       >
         <v-card-text class="pt-0">
           Social Media
+
         </v-card-text>
         <v-card-text>
           <v-btn
